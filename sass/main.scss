@@ -1,0 +1,104 @@
+$spacing: 8px;
+$primary-color: #562e5c;
+$primary-color-darkness: #2c2049;
+$secondary-color: #fed525;
+$secondary-color-darkness: #ecb602;
+$text-color: #fff;
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 200px;
+
+  @extend %center;
+
+  img {
+    height: 100%;
+  }
+}
+
+.side-left {
+  .menu {
+    // min-height: 300px;
+
+    position: sticky;
+    margin-left: -15px;
+    padding: $spacing * 4;
+    top: 100px;
+
+    background-color: $primary-color;
+    border-left: 5px solid $secondary-color-darkness;
+    border-radius: 0px 8px 8px 0px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.16);
+  }
+
+  .category {
+    &__title {
+      cursor: pointer;
+      font-size: 1.25rem;
+      color: $text-color;
+      padding: 4px 0px;
+      transition: 0.3s color;
+      &:hover,
+      &[aria-expanded="true"] {
+        color: $secondary-color;
+      }
+    }
+
+    &__sub {
+      div {
+        display: flex;
+        flex-direction: column;
+        padding-left: $spacing * 2;
+
+        a {
+          color: $text-color;
+          &.active {
+            color: $secondary-color;
+          }
+          &:hover {
+            text-decoration: none;
+            color: lighten($color: $secondary-color, $amount: 10);
+          }
+          &::before {
+            content: "\2022";
+            color: $text-color;
+            padding-right: $spacing;
+          }
+        }
+      }
+    }
+  }
+}
+
+.side-right {
+  min-height: 200vh;
+  // background-color: $primary-color;
+  border-right: 5px solid $secondary-color-darkness;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.16);
+  margin-bottom: $spacing * 2;
+  .content {
+    // box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.16);
+  }
+}
+
+footer {
+  min-height: 100px;
+  @extend %center;
+  color: $text-color;
+  font-weight: 400;
+  background-color: $primary-color;
+  border-top: 5px solid $secondary-color-darkness;
+}

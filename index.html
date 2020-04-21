@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CRM</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="assets/img/logo.png"
+          alt="logo"
+          srcset="assets/img/logo.png"
+        />
+      </div>
+    </header>
+    <div class="container-fluid w-100">
+      <div class="row">
+        <div class="col-3 side-left">
+          <div class="menu" id="menu">
+            <div class="category">
+              <div
+                class="category__title"
+                data-toggle="collapse"
+                data-target="#tutorial"
+                aria-expanded="true"
+              >
+                Salesforce Tutorial
+              </div>
+              <div
+                id="tutorial"
+                class="collapse category__sub"
+                data-parent="#menu"
+              >
+                <div>
+                  <a class="active" href="#">Home</a>
+                  <a href="#">Overview</a>
+                  <a href="#">Architecture</a>
+                  <a href="#">Environment</a>
+                  <a href="#">Sales Cloud</a>
+                  <a href="#">Service Cloud</a>
+                  <a href="#">Navigating Cloud</a>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div
+                class="category__title"
+                data-toggle="collapse"
+                data-target="#objects"
+              >
+                Salesforce Objects
+              </div>
+              <div
+                id="objects"
+                class="collapse category__sub"
+                data-parent="#menu"
+              >
+                <div>
+                  <a href="#">Standard Object</a>
+                  <a href="#">Custom Object</a>
+                  <a href="#">Master Details</a>
+                  <a href="#">Lookup Relationship</a>
+                  <a href="#">Schema Buider</a>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div
+                class="category__title"
+                data-toggle="collapse"
+                data-target="#security"
+              >
+                Data Security
+              </div>
+              <div
+                id="security"
+                class="collapse category__sub"
+                data-parent="#menu"
+              >
+                <div>
+                  <a href="#">Controls Access Org</a>
+                  <a href="#">Controls Access Objects</a>
+                  <a href="#">Controls Access Fields</a>
+                  <a href="#">Controls Access Records</a>
+                  <a href="#">Create a Role Hierarchy</a>
+                  <a href="#">Define Shareing Rules</a>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div
+                class="category__title"
+                data-toggle="collapse"
+                data-target="#process_builder"
+              >
+                Process Builder
+              </div>
+              <div
+                id="process_builder"
+                class="collapse category__sub"
+                data-parent="#menu"
+              >
+                <div>
+                  <a href="#">Business Processes</a>
+                  <a href="#">Importing Data</a>
+                  <a href="#">Exporting Data</a>
+                  <a href="#">Reports</a>
+                  <a href="#">Dashboards</a>
+                  <a href="#">Using Fomula Fields</a>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div
+                class="category__title"
+                data-toggle="collapse"
+                data-target="#visualforce"
+              >
+                Visualforce
+              </div>
+              <div
+                id="visualforce"
+                class="collapse category__sub"
+                data-parent="#menu"
+              >
+                <div>
+                  <a href="#">Visualforce Pages</a>
+                  <a href="#">Variables & Fomulas</a>
+                  <a href="#">Standard Conntrolers</a>
+                  <a href="#">Records, Fields & Tabels</a>
+                  <a href="#">Using Forms</a>
+                  <a href="#">List Controllers</a>
+                  <a href="#">Static Resources</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-9 side-right">
+          <div class="container-fluid content">
+            <div class="row">
+              <div class="col-12">
+                ngu
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Copyright &copy; 2020 Design by me
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".collapse").collapse("hide");
+      $("[aria-expanded='true']").siblings().collapse("show");
+    </script>
+  </body>
+</html>
